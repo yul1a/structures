@@ -9,13 +9,9 @@ import java.util.stream.Stream;
 public class Main {
 
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
 
-        MergeSort.main();
+        //MergeSort.main();
         BirthdayChocolate.main();
     }
-
-
-
-
 }
