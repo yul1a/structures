@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Stack;
 
 class SolutionWithIterator implements BaseballGame{
-    ArrayDeque<Integer> stack = null; //valid points
+    ArrayDeque<Integer> stack = null; 
     int result ;
 
     public int calPoints(String[] ops) {
