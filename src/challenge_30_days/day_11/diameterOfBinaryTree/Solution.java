@@ -24,19 +24,14 @@ public class Solution {
         return max;
     }
 
-    public int diameter(TreeNode node) {
-        if(node==null)
+    public int diameter(TreeNode node){
+        if (node == null)
             return 0;
+        int left = diameter(node.left);
+        int right = diameter(node.right);
 
-        int leftHeight = diameter(node.left);
-        int rightHeight = diameter(node.right);
+        max = left + right > max ? left + right : max;
 
-        if(leftHeight + rightHeight  > max){
-            max = leftHeight + rightHeight ;
-        }
-        if(leftHeight>rightHeight)
-            return leftHeight + 1;
-        else
-            return rightHeight + 1;
+        return left > right ? left + 1 : right + 1;
     }
 }
