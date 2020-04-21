@@ -1,10 +1,10 @@
 package challenge_30_days.day_11.diameterOfBinaryTree;
 
 public class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x) { val = x; }
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
+    public TreeNode(int x) { val = x; }
 
     public static void preOrder(TreeNode node)
     {   if (node == null) { return; }
